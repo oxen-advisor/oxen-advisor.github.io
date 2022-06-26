@@ -1,0 +1,120 @@
+:root {
+  --font-color: #31c431;
+  --font-color-ok: #00b5e2;
+  --font-color-alert: red;
+  --font-color-warning: #f98648;
+  --link-color: #f8f8ff;
+  --bg-color: #1a1b1c;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: monospace;
+  color: var(--font-color);
+  /*
+  text-shadow:
+    0 0 1ex var(--font-color),
+    0 0 2px var(--link-color);
+    */
+}
+
+h1 {
+  font-size: large;
+}
+
+h2 {
+  font-size: larger;
+}
+
+h3 {
+  font-size: medium;
+}
+
+span.bad {
+  color: var(--font-color-alert);
+  font-weight: bold;
+}
+
+span.warn {
+  color: var(--font-color-warning);
+}
+
+span.ok {
+  color: var(--font-color-ok);
+}
+
+code.ok {
+  color: var(--font-color-ok);
+  font-weight: bold;
+}
+
+div.operator {
+  font-weight: bold;
+}
+
+div.contributor {
+  font-weight: lighter;
+}
+
+h1 a {
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid var(--font-color);
+  padding: 1em;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  vertical-align: top;
+
+  border: 1px solid var(--font-color);
+  padding: 0.2rem;
+  border-collapse: collapse;
+}
+
+td.right {
+  text-align: right;
+}
+
+hr {
+  border-top: 1px solid var(--font-color);
+}
+
+span.level {
+  position: absolute;
+}
+
+span.level sup {
+  font-size: small;
+  display: block;
+  position: relative;
+  left: 0.1rem;
+  top: -0.4rem;
+  color: var(--font-color-ok);
+}
+
+span.level sub {
+  font-size: small;
+  display: block;
+  position: relative;
+  left: 0.1rem;
+  top: -0.4rem;
+  color: var(--font-color-alert);
+}
+
+span.ip-tooltip {
+  cursor: help;
+  text-shadow: 0 0 2px var(--link-color);
+}
+
+ol.nodes {
+  margin: 0;
+}
