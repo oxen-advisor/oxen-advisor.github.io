@@ -118,3 +118,10 @@ span.ip-tooltip {
 ol.nodes {
   margin: 0;
 }
+
+span.tiny {
+  color: #000;
+  font-size: small;
+  font-weight: 100;
+  font-stretch: ultra-condensed;
+}
